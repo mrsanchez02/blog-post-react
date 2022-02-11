@@ -1,0 +1,30 @@
+.post__container{
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.post__picture{
+    width: 700px;
+    align-self: center;
+    transition: width 500ms ease;
+}
+
+.post__picture_reading{
+    width: 100vw;
+    align-self: center;
+    transition: width 500ms ease;
+}
+
+.post__title {
+    font-size: 42px;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+p{
+    font-size: 18px;
+    line-height: 2.2rem;
+    font-family: sans-serif;
+    text-align: justify;
+}
