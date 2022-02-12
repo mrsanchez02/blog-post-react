@@ -12,8 +12,12 @@
 
 .post__picture_reading{
     width: 100vw;
+    height: 250px;
+    object-fit: cover;
     align-self: center;
     transition: width 500ms ease;
+    top: -10px;
+    position: sticky;
 }
 
 .post__title {
@@ -22,6 +26,24 @@
     padding: 1rem 0;
 }
 
+.toTop{
+    padding: 1.2rem 0;  
+} 
+
+body{
+    width: 100%;
+}
+
+.parallax {
+    background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+    min-height: 500px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 p{
     font-size: 18px;
     line-height: 2.2rem;
@@ -29,12 +51,12 @@ p{
     text-align: justify;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 780px){
     .post__container{
         padding: 0 1.5rem;
     }
 
     .post__picture_reading{
-        width: 300px;
+        width: 100%;
     }
 }

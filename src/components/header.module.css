@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    background: black;
+    width: 100vw;
+    position: sticky;
+    z-index: 9;
+}
+
+.menu__item a {
+    display: block;
+    width: 60px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
