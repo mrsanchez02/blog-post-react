@@ -35,9 +35,8 @@ body{
 }
 
 .parallax {
-    background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+    background-image: url("https://pixabay.com/get/g16972e99ae210073f2b02fc3204b129b2e4f3c0ffbc8bf7f7967f924c2949b850c4961d5ea33210b70cf0861759a26f787b3d8b6f974991e5d63218bd8f021c9_1280.jpg");
     min-height: 500px;
-  
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

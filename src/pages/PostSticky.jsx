@@ -10,18 +10,17 @@ const Post_sticky = () => {
     useEffect(() => {
         const onScroll = () => setOffSet(window.scrollY);
 
-        window.removeEventListener('scroll', onScroll);
         window.addEventListener('scroll',onScroll);
 
-        return () => window.removeEventListener('scroll', onScroll);
+        // return () => window.removeEventListener('scroll', onScroll);
 
     }, [])
 
   return (
     <>    
     <div className={style.post__container}>
-      <img src={landscape} id='picture' alt='Post title' className={offSet<=30?style.post__picture:style.post__picture_reading}/>
-      <h1 className={style.post__title} id='title'>Works!</h1>
+      <img src={landscape} id='picture' alt='Post title' className={offSet<=10?style.post__picture:style.post__picture_reading}/>
+      <h1 className={style.post__title} id='title'>Post image is Sticky to the top!</h1>
       <Link to={'/'}>back to home.</Link>
       <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel doloremque voluptates quos quas harum dignissimos est tenetur, ex voluptate tempora commodi sint officia sit maxime explicabo eveniet modi, similique, odit tempore porro mollitia magnam quisquam? Natus, corporis provident sapiente cupiditate minima, ea, nisi modi delectus reiciendis dicta architecto enim aspernatur porro. Iusto neque nobis, sequi expedita cumque soluta totam. Eos iure impedit inventore suscipit accusamus reprehenderit quas officia dolorum dolor, voluptas nulla repellendus itaque eveniet corrupti saepe sapiente in sunt reiciendis enim natus? Repellendus officiis facilis voluptate tenetur sequi eum, hic asperiores. Ipsa hic dolore aperiam modi voluptate nulla, ex magni labore fuga! Ratione magni rerum iusto nobis perferendis quis? Modi, suscipit? Voluptatum hic et vero quod perferendis atque tempore expedita, eos corporis odit non magni accusamus fugiat consequatur quasi, laborum voluptatem ratione ullam dicta at a!</p>
         
